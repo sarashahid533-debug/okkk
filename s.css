@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jujutsu High Refectory Menu</title>
+    <style>
+        /* General Page Styling - Jujutsu High Theme */
+        body {
+            font-family: 'Impact', 'Segoe UI', sans-serif;
+            background-color: #0b0f19; /* Deep Tokyo night background */
+            color: #e0e6ed;
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 30px;
+            border-radius: 12px;
+            border: 2px solid #1e293b;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+            background-image: "radial-gradient(circle at top, #111827 0%, #070a10 100%)";
+        }
+
+        /* Domain Expansion Heading */
+        h1 {
+            color: #e11d48; /* Cursed Crimson Red */
+            text-align: center;
+            font-size: 2.8rem;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            text-shadow: 2px 2px 0px #000, 0 0 10px rgba(225, 29, 72, 0.5);
+        }
+
+        /* Cursed Energy Intro Paragraph (Warm Orange Flame) */
+        .intro {
+            color: #ea580c; /* High-intensity orange flame */
+            font-size: 1.1rem;
+            text-align: center;
+            font-family: 'Segoe UI', sans-serif;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 35px;
+            text-shadow: 0 0 8px rgba(234, 88, 12, 0.3);
+        }
+
+        /* Menu List Styling */
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin-bottom: 35px;
+        }
+
+        li {
+            background-color: #111827; /* Dark sorcerer uniform blue/black */
+            margin: 12px 0;
+            padding: 18px;
+            border-radius: 6px;
+            font-size: 1.1rem;
+            font-family: 'Segoe UI', sans-serif;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            border-left: 5px solid #38bdf8; /* Pure Cursed Energy Blue line */
+            box-shadow: 3px 3px 0px #000;
+            transition: all 0.2s ease;
+        }
+
+        li:hover {
+            transform: translateX(5px);
+            background-color: #1f2937;
+        }
+
+        /* Highlighted 3rd Item: Sukuna's Chef Special */
+        li.chefs-special {
+            background-color: #1c1017; /* Malevolent Shrine dark purple tint */
+            border-left: 5px solid #e11d48; /* Crimson red accent border */
+            color: #f43f5e;
+            font-weight: 800;
+        }
+
+        li.chefs-special::after {
+            content: " 💀 MALEVOLENT SPECIAL (Grade 1)";
+            font-size: 0.8rem;
+            color: #ea580c;
+            font-family: 'Impact', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            display: block;
+            margin-top: 6px;
+        }
+
+        /* Description Paragraph with a Cursed First Letter */
+        .description {
+            font-family: 'Segoe UI', sans-serif;
+            font-size: 1rem;
+            line-height: 1.7;
+            color: #9ca3af;
+            margin-bottom: 35px;
+            text-align: justify;
+            border-top: 1px dashed #374151;
+            padding-top: 20px;
+        }
+
+        .description::first-letter {
+            font-family: 'Impact', sans-serif;
+            font-size: 4rem;
+            font-weight: bold;
+            color: #e11d48; /* Giant blood-red drop-cap */
+            float: left;
+            margin-right: 10px;
+            line-height: 0.85;
+            text-shadow: 2px 2px 0px #000;
+        }
+
+        /* Button Container */
+        .button-container {
+            display: flex;
+            justify-content: space-around;
+            gap: 15px;
+            margin-top: 25px;
+        }
+
+        /* Black Flash Cursed Glow Buttons */
+        .glow-btn {
+            background-color: #000000;
+            color: #38bdf8; /* Neon blue text */
+            border: 2px solid #38bdf8;
+            padding: 14px 30px;
+            font-size: 1rem;
+            font-family: 'Impact', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            width: 45%;
+        }
+
+        /* Neon Cursed Energy Flare (Black Flash / Unlimited Void glow) */
+        .glow-btn:hover {
+            color: #ffffff;
+            background-color: #38bdf8;
+            box-shadow: 0 0 15px #38bdf8, 0 0 30px #0ea5e9, 0 0 45px #2563eb;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Heading -->
+    <h1>Domain Expansion: Menu</h1>
+
+    <!-- Warm Orange Intro Paragraph -->
+    <p class="intro">Channelling raw cursed energy into culinary masterpieces to fuel Jujutsu Sorcerers for the ultimate battle.</p>
+
+    <!-- Menu List -->
+    <ul>
+        <li>Divergent Fist Garlic Bread</li>
+        <li>Hollow Purple Berry Shake</li>
+        <li class="chefs-special">Sukuna's Grilled Cursed Finger Ribs</li> <!-- 3rd Item Highlighted -->
+        <li>Ratio Technique Seven-To-Three Steak</li>
+        <li>Unlimited Void Espresso Cake</li>
+    </ul>
+    
+
+    <!-- Description Paragraph with a Big First Letter -->
+    <p class="description">Sorcerers at Tokyo Jujutsu High demand maximum sustenance to keep their reverse cursed techniques running smoothly. Every dish served within this domain is bound by a heavenly restriction to unlock peak performance, explosive strength, and refined taste buds. Consume carefully, or risk losing control of your inner vessel.</p>
+
+    <!-- Glowing Action Buttons -->
+    <div class="button-container">
+        <button class="glow-btn"><a href="op.htm" style="color: inherit; text-decoration: none;">Deploy Order</a></button>
+        <button class="glow-btn"><a href="your.htm" style="color: inherit; text-decoration: none;">Enter Domain</a></button>
+    </div>
+    <h2 id="footer" style="text-align: center; margin-top: 40px; color: #0055ff; font-family: 'Segoe UI', sans-serif;">© 2024 Jujutsu High Culinary Arts. All rights reserved.</h2>
+    <h2 style="text-align: center; margin-top: 10px; color: #0055ff; font-family: 'Segoe UI', sans-serif;">Designed by Satoru Gojo</h2>
+    <h2 style="text-align: center; margin-top: 10px; color: #0055ff; font-family: 'Segoe UI', sans-serif;">Powered by Cursed Energy</h2>
+    <h2 style="text-align: center; margin-top: 10px; color: #0055ff; font-family: 'Segoe UI', sans-serif;">Experience the Ultimate Culinary Domain</h2>
+    <h2 style="text-align: center; margin-top: 10px; color: #0055ff; font-family: 'Segoe UI', sans-serif;">Unleash Your Taste Buds with Jujutsu High's Menu</h2>
+    <h2 style="text-align: center; margin-top: 10px; color: #0055ff; font-family: 'Segoe UI', sans-serif;">Where Cursed Energy Meets Culinary Excellence</h2>
+    <h2 style="text-align: center; margin-top: 10px; color: #0055ff; font-family: 'Segoe UI', sans-serif;">Join Us in the Ultimate Dining Experience</h2>
+    <h2 style="text-align: center; margin-top: 10px; color: #0055ff; font-family: 'Segoe UI', sans-serif;">Savor the Flavors of Jujutsu High's Culinary Domain</h2>
+    <h2 style="text-align: center; margin-top: 10px; color: #0055ff; font-family: 'Segoe UI', sans-serif;">Indulge in the Cursed Delicacies of Jujutsu High</h2>
+    <h2 style="text-align: center; margin-top: 10px; color: #0055ff; font-family: 'Segoe UI', sans-serif;">Experience the Power of Cursed Energy in Every Bite</h2>
+    <h2 style="text-align: center; margin-top: 10px; color: #0055ff; font-family: 'Segoe UI', sans-serif;">Discover the Ultimate Culinary Domain at Jujutsu High</h2>
+    <h2 style="text-align: center; margin-top: 10px; color: #0055ff; font-family: 'Segoe UI', sans-serif;">Where Every Dish is a Cursed Masterpiece</h2>
+    <h2 style="text-align: center; margin-top: 10px; color: #0055ff; font-family: 'Segoe UI', sans-serif;">Join Us in the Ultimate Dining Experience at Jujutsu High</h2>
+    <h2 style="text-align: center; margin-top: 10px; color: #0055ff; font-family: 'Segoe UI', sans-serif;">Savor the Flavors of Jujutsu High's Culinary Domain</h2>
+    <h2 style="text-align: center; margin-top: 10px; color: #0055ff; font-family: 'Segoe UI', sans-serif;">Indulge in the Cursed Delicacies of Jujutsu High</h2>
+    <h2 style="text-align: center; margin-top: 10px; color: #0055ff; font-family: 'Segoe UI', sans-serif;">Experience the Power of Cursed Energy in Every Bite</h2>
+    <h2 style="text-align: center; margin-top: 10px; color: #34dd0a; font-family: 'Segoe UI', sans-serif;">Discover the Ultimate Culinary Domain at Jujutsu High</h2>
+    <h2 style="text-align: center; margin-top: 10px; color: #062b76; font-family: 'Segoe UI', sans-serif;">Where Every Dish is a Cursed Masterpiece</h2>
+    <h2 style="text-align: center; margin-top: 10px; color: #16d6d6; font-family: 'Segoe UI', sans-serif;">Join Us in the Ultimate Dining Experience at Jujutsu High</h2>
+    <h2 style="text-align: center; margin-top: 10px; color: #34dd0a; font-family: 'Segoe UI', sans-serif;">Savor the Flavors of Jujutsu High's Culinary Domain</h2>
+    <h2 style="text-align: center; margin-top: 10px; color: #062b76; font-family: 'Segoe UI', sans-serif;">Indulge in the Cursed Delicacies of Jujutsu High</h2>
+    <h2 style="text-align: center; margin-top: 10px; color: #16d6d6; font-family: 'Segoe UI', sans-serif;">Experience the Power of Cursed Energy in Every Bite</h2>
+    <h2>Watch this video to see the magic!<a href="op.htm">Click here</a></h2>
+    <h2>Ready to enter the domain? <a href="your.htm">Click here</a></h2>
+    <h2>watch <a href="https://github.com/sarashahid533-debug/the-very-good-project-using-css.git">this video</a></h2>
+</html>
